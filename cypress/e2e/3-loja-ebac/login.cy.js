@@ -43,12 +43,18 @@ describe("Funcionalidade: Login", () => {
         cy.get(".woocommerce-MyAccount-content > :nth-child(2)").should("contain","Olá, edson-3224 (não é edson-3224? Sair)");
     });
 
-    it.only('Deve fazer login com sucesso - Usando fixture', () => {
+    it('Deve fazer login com sucesso - Usando fixture', () => {
         cy.fixture('perfil').then(dados =>{
         cy.get("#username").type(dados.usuario);
         cy.get("#password").type(dados.senha , {log: false});
         cy.get(".woocommerce-form > .button").click();
         cy.get(".woocommerce-MyAccount-content > :nth-child(2)").should("contain","Olá, edson-3224 (não é edson-3224? Sair)");
         })
+    });
+
+    it.only('Deve fazer login com sucesso comando customizado', () => {
+        cy.login('edson@2025.com.br', 'edson')
+        cy.get(".woocommerce-MyAccount-content > :nth-child(2)").should("contain","Olá, edson-3224 (não é edson-3224? Sair)");
+       
     });
 });
