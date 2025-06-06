@@ -1,0 +1,28 @@
+[
+    {
+
+        "nomeProduto": "Abominable Hoodie",
+        "tamanho": "S",
+        "cor": "Red",
+        "quantidade": 2
+
+    },
+
+    {
+
+        "nomeProduto": "Aero Daily Fitness Tee",
+        "tamanho": "S",
+        "cor": "Black",
+        "quantidade": 5
+
+    },
+
+    {
+
+        "nomeProduto": "Livingston All-Purpose Tight",
+        "tamanho": "33",
+        "cor": "Red",
+        "quantidade": 10
+
+    }
+]
