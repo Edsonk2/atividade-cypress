@@ -1,0 +1,22 @@
+[
+    {
+        "nomeProduto": "Abominable Hoodie",
+        "tamanho":"L",
+        "cor": "Red",
+        "quantidade": 3
+    },
+
+    {
+        "nomeProduto": "Ariel Roll Sleeve Sweatshirt",
+        "tamanho":"L",
+        "cor": "Green",
+        "quantidade": 5
+    },
+
+    {
+        "nomeProduto": "Cassia Funnel Sweatshirt",
+        "tamanho":"L",
+        "cor": "Purple",
+        "quantidade": 10
+    }
+]
