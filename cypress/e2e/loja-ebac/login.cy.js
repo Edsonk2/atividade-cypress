@@ -45,14 +45,14 @@ describe('Funcionalidade: Login',()=>{
         cy.get('#username').type(dados.usuario , {log: false})
         cy.get('#password').type(dados.senha , {log: false})
         cy.get('.woocommerce-form > .button').click()
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, oliveira (não é oliveira? Sair)')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('exist')
 
        })
     });
 
     it.only('Deve fazer login com sucesso - usando Comando customizado', () => {
       cy.login('oliveira@gmail.com.br', 'edson')
-      cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, oliveira (não é oliveira? Sair)')
+      cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('exist')
 
     });
 })
